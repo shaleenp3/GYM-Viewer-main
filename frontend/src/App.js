@@ -1,0 +1,38 @@
+import { Routes, Route } from "react-router-dom";
+import Header from "./Components/Header";
+import BasicTimer from "./Components/BasicTimer";
+import ArmapTimer from "./Components/ArmapTimer";
+import WorkStyles from "./Components/WorkStyles";
+import TabataTimer from "./Components/TabataTimer";
+import Protected from "./Components/Protected";
+import WorkoutLog from "./Components/WorkoutLog";
+import EmomTimer from './Components/EmomTimer'
+function App() {
+  return (
+    <div className="App">
+      <Header />
+      <Routes>
+        {/* <Route path="/" element={<Home />}></Route> */}
+        <Route path="/" element={<WorkStyles />}></Route>
+        <Route path="workoutlog" element={<WorkoutLog />}></Route>
+        <Route
+          path="basic"
+          element={<Protected Component={BasicTimer} />}
+        ></Route>
+        <Route
+          path="armap"
+          element={<Protected Component={ArmapTimer} />}
+        ></Route>
+        <Route
+          path="tabata"
+          element={<Protected Component={TabataTimer} />}
+        ></Route>
+        <Route
+          path="emom"
+          element={<Protected Component={EmomTimer} />}
+        ></Route>
+      </Routes>
+    </div>
+  );
+}
+export default App;

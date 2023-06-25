@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.user-title{
+    font-size: "1.5rem";
+    color: coral;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.logo-container {
+    display:flex;
+    max-width: 100px;
+    height: 100px;
+    padding-inline: 2em;
+    justify-content: space-between;
+}
+.navbar {
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: yellow;
+  color: rgb(255, 222, 9);
+}
+.nav-links {
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+  position: absolute;
+  top: 4px;
+}
+
+*,*::after,*::before{
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 92.5%;
+}
+body{
+  font-size: 2.6rem;
+}
+li{
+  list-style: none;
+  
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+li a{
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background: none;
+}
+.nav_menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+  font-size: larger;
+  margin-right: 180px;
+  
+}
+
+
+.workstyles,
+.logs,
+.about,
+.signup {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#singup {
+  position: absolute;
+  top: 4px;
+  padding: 0px;
+}
+.mobile-menu-icon {
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  list-style-type: none;
+  
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  top: 3px;
+  right: 0px;
+}
+
+.nav-links-mobile {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background-color: black;
+  top: 50px;
+  left: 0;
+  transition: all 0.5s ease-out;
+  width: 100%;
+}
+.nav-links {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .logo {
+    /* display: flex; */
+    position: absolute;
+    /* font-size: 50px; */
+    top: 8px;
+    left: 10px;
+  }
+  .workstyles,
+  .logs,
+  .about,
+  .signup {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .signup {
+    border: none;
+  }
+}

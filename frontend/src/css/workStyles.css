@@ -1,0 +1,17 @@
+.grid-workStyles{
+    display: grid;
+    grid-template-columns : auto auto
+}
+
+
+
+.grid-styles{
+    padding : 0px;
+    text-align : center;
+}
+
+@media  screen and (max-width: 480px) {
+    .grid-workStyles {
+        grid-template-columns : auto;
+    }
+}
