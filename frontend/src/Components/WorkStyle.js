@@ -2,16 +2,14 @@ import React from 'react';
 // import { useState,useRef } from 'react' ;
 import { useNavigate } from 'react-router-dom';
 import '../css/workStyle.css';
-import { useAuth0 } from "@auth0/auth0-react";
 const WorkStyle = ({ title, info, routePath }) => {
-    const { loginWithRedirect, isAuthenticated } = useAuth0();
+    const token = localStorage.getItem('token')
     const navigate = useNavigate();
     function redirect() {
-        if (isAuthenticated) {
+        if (token) {
             navigate(routePath);
         } else {
-            loginWithRedirect();
-            navigate('/');
+            window.location.href = '/login'
         }
     }
     return (
@@ -22,7 +20,7 @@ const WorkStyle = ({ title, info, routePath }) => {
                     <p className='info'>{info}</p>
                 </span>
                 <div className="button-box">
-                    <button className="card-btn" onClick={redirect}> LET'S GO </button>
+                    <button className="card-btn" onClick={redirect}> LET'S GO</button>
                 </div>
             </div>
         </>

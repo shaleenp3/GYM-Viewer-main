@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   /* font-family: fantasy !important; */
 }
 
@@ -26,7 +26,7 @@ video {
   }
   
 nav {
-  background: linear-gradient(rgba(220, 167, 6, 0.98), rgba(223, 179, 4, 0.98));
+  background: linear-gradient(rgba(217, 171, 6, 0.98), rgba(0, 0, 0, 98%));
   color: white !important;
 }
 

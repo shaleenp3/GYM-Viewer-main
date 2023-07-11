@@ -43,4 +43,4 @@ const WorkStyles = () => {
     </>
   );
 }
-export default WorkStyles;
+export default WorkStyles
