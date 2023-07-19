@@ -5,7 +5,7 @@ import ArmapTimer from "./Components/ArmapTimer";
 import WorkStyles from "./Components/WorkStyles";
 import TabataTimer from "./Components/TabataTimer";
 import Protected from "./Components/Protected";
-//import WorkoutLog from "./Components/WorkoutLog";
+import WorkoutLog from "./Components/WorkoutLog";
 import EmomTimer from './Components/EmomTimer'
 import SingUp from './auth/SignUp'
 import Login from './auth/Login'
@@ -23,7 +23,7 @@ function App() {
         <Route path="forgetpassword" element={<ForgetPassword/>}></Route>
         <Route path="user/:id/verify/:token" element={<EmailVerify />} />
 
-        {/*<Route path="workoutlog" element={<WorkoutLog />}></Route>*/}
+        <Route path="workoutlog" element={<WorkoutLog />}></Route>
         <Route
           path="basic"
           element={<Protected Component={BasicTimer} />}
