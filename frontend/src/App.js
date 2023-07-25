@@ -8,9 +8,12 @@ import Protected from "./Components/Protected";
 import WorkoutLog from "./Components/WorkoutLog";
 import EmomTimer from './Components/EmomTimer'
 import SingUp from './auth/SignUp'
-import Login from './auth/Login'
+import Login from './auth/Login' 
 import EmailVerify from './auth/EmailVerify'
 import ForgetPassword from './auth/ForgetPassword'
+import AdminLogin from "./auth/AdminLogin";
+import AdminHome from "./Components/AdminHome";
+
 function App() {
   return (
     <div className="App">
@@ -20,6 +23,8 @@ function App() {
         <Route path="/" element={<WorkStyles />}></Route>
         <Route path="signup" element={<SingUp/>}></Route>
         <Route path="login" element={<Login/>}></Route>
+        <Route path="admin" element={<AdminLogin/>}></Route>
+        <Route path="adminhome" element={<AdminHome/>}></Route>
         <Route path="forgetpassword" element={<ForgetPassword/>}></Route>
         <Route path="user/:id/verify/:token" element={<EmailVerify />} />
 
